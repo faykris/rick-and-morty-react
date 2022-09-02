@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Rick and Morty - React
+![](https://playbyplaytoys.es/wp-content/uploads/2021/01/rickymorty_bleed.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is a website that use a GraphQL API to retrieve information about characters from cartoon TV show named Rick and Morty.
 
 ## Available Scripts
 
@@ -14,57 +16,69 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- It shows basic information about characters in different card each one, you can click on to show detailed information.
+- You can select each character as Favorite clicking on the heart icon at the right-top corner of the card.
+- The same way you can unselect clicking on the Heart. The count of favorites is in the header with their button.
+- Clicking on the Favorite's button you can access to selected characters as favorites.
+- You can return directly to home clicking on the **Rick and Morty logo** on the header.
+- The Exercise 1 is explained in this README more below.
+- The Exercise 2 is explained in this README too, but implemented in **List Nicknames** navbar option.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Characters
+This is the homepage, it shows all the characters with their name in colored cards, you can select as Favorite clicking on the outlined heart that becomes to solid heart.
+Also, if you click on the card directly, you navigate to other page with detailed information about selected character.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![screenshot-1](screenshots/Screenshot_1.png)\
+## Detailed
+This page has specific information about character previously selected. You can return to characters or favorites list clicking on the **Go back** button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![screenshot-2](screenshots/Screenshot_2.png)\
+## Favorites
+Here shows all selected characters as favorites, you can unselect clicking on the red heart and this card will be disappeared.
 
-### `npm run eject`
+![screenshot-3](screenshots/Screenshot_3.png)\
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Exercise 1 - Numeric array function
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Solution
+```javascript
+function sum(array2d) {
+    const result = array2d.flat().reduce((total, current) => total + current, 0)
+    return (doSomethingWithResult) => doSomethingWithResult(result);
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Examples
+```javascript
+sum([1,3,4])(console.log); // Output: 8
+sum([[1],[3],[4]])(console.log); // Output: 8
+sum([[1,1,1],[2,2,2],[3,3,3]])(console.log); // Output: 18
+sum([[1,1,1,1,1],[2,2,1],[3,2],5])(console.log); // Output: 20
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Exercise 2 - Nicknames List component
 
-## Learn More
+### Component fields
+This page has a text field where you need to type a name with the nickname separated by a space, a select field that you can choose the order
+of a nick list is ASC or DESC. The button to add nickname and clear the list.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![screenshot-4](screenshots/Screenshot_4.png)\
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Change order
+If you select ASC, the nicknames list will be ordered A-Z-a-z, take note that uppercase letters is first than lowercase letters. Otherwise, when you select DESC the order is inverted.
 
-### Code Splitting
+![screenshot-5](screenshots/Screenshot_5.png)\
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Validations
+If you type incorrect values in the text field, when you click on **Add Nickname** button an error message will be displayed, the following messages are:
+- Name & Nickname can't be empty.
+- You need to specify a second word as nickname separated with space.
+- The nickname already exists in the list. Try another.
 
-### Analyzing the Bundle Size
+![screenshot-6](screenshots/Screenshot_6.png)\
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+- Cristian Pinzón: ![LinkedIn](https://www.linkedin.com/in/cristian-pinzon28/)
