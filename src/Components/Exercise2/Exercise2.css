@@ -1,0 +1,80 @@
+.Exercise2 {
+    color: white;
+}
+
+.Exercise2 h1 {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.listNickNames-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listNickNames-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listNickNames-field:first-child {
+    margin-right: 2rem;
+}
+.listNickNames-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.listNickNames-buttons button {
+    margin: 0 1rem;
+    padding: .5rem 1.5rem;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: .2s;
+    color: white;
+}
+
+.listNickNames-buttons .addNames {
+    background-color: #119911;
+}
+
+.listNickNames-buttons .clearList {
+    background-color: #33bbbb;
+}
+
+.listNickNames-buttons .addNames:hover {
+    background-color: #22aa22;
+}
+
+.listNickNames-buttons .clearList:hover {
+    background-color: #55baba;
+}
+
+.listNickNames-form .listNickNames-field label {
+    background-color: #999922;
+    padding: 0 .4rem;
+    /*font-size: 1rem;*/
+}
+
+.listNickNames-field .input-name-nickname,
+.listNickNames-field .select-order-nickname {
+    height: 21px;
+    background-color: #595959;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    border: none;
+}
+
+.errorMessage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.errorMessage span {
+    background-color: #bb3333;
+    width: 35rem;
+}

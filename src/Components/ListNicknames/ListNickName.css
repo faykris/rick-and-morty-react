@@ -1,0 +1,43 @@
+.ListNickNames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.ListNickNames h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.ListNickNames .ordered-list,
+.ListNickNames .no-names-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: rgba(0,0,0,.5);
+}
+.ListNickNames .no-names-list h2 {
+    margin: 0;
+}
+
+.ListNickNames .no-names-list {
+    border: 2px solid #992299;
+    color: #bb33bb;
+}
+.ListNickNames .ordered-list {
+    border: 2px solid #33bbbb;
+    color: #5ceaea;
+}
+.ListNickNames .ordered-list ul li {
+    list-style: none;
+    color: white;
+    border: 2px solid #33bbbb;
+    padding: 0 1rem;
+    margin: .3rem;
+    text-align: center;
+    border-radius: 6px;
+}

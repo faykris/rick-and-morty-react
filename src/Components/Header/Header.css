@@ -1,0 +1,60 @@
+.Header {
+    background-color: rgba(50, 50, 120, .5);
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px 2px #999922;
+}
+
+.header-logo{
+    height: 4rem;
+    background-image: url("https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 10rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.header-nav span {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #55baba;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.header-favorites {
+    background-color: #992299;
+    padding: 0 .2rem;
+    border-radius: 6px;
+}
+
+.header-favorites svg {
+    color: #bb3333;
+    transition: .2s;
+}
+
+.header-favorites span{
+    color: white;
+    margin: 0 .2rem;
+    font-weight: 400;
+}
+
+.header-nav span:hover {
+    color: #5ceaea;
+}
+
+.header-favorites:hover span {
+    color: white;
+}
+
+.header-favorites:hover {
+    background-color: #bb33bb;
+}
+
+

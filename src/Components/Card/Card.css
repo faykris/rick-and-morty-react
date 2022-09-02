@@ -1,0 +1,103 @@
+.Card {
+    list-style-type: none;
+    width: 13rem;
+    height: 16rem;
+    padding: .5rem;
+    margin: .7rem;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.Card:hover {
+    width: 14rem;
+    height: 17rem;
+    margin: .1rem .2rem;
+    border-radius: 6px;
+}
+
+.card-img {
+    border-radius: 5px 5px 0 0;
+    height: 10.8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 22px;
+    text-align: right;
+    flex-direction: row;
+    transition: .2s;
+}
+
+.card-body {
+    border-radius: 0 0 5px 5px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.card-body h3 {
+    text-align: center;
+    margin: 0;
+    transition: .2s;
+    color: white;
+}
+
+.card-ico {
+    /*margin: 0 .5rem .5rem 0;*/
+    /*background-color: #111111;*/
+    /*background: rgb(0,0,0);*/
+    /*background: linear-gradient(270deg, rgba(0,0,0,.6) 15%, rgba(255,255,255,0) 25%);*/
+    z-index: 3;
+}
+
+.card-ico svg {
+    font-size: 30px;
+    color: #bb3333;
+    transition: .2s;
+    cursor: pointer;
+
+
+}
+
+.Card:hover .card-img {
+    height: 11.8rem;
+}
+
+.Card:hover .card-body h3 {
+    font-size: 125%;
+}
+
+.Card:hover .card-ico svg {
+    font-size: 32px;
+}
+
+.Card:nth-child(n+2){
+    border: 2px solid #229999;
+    box-shadow: 0 0 4px 4px #33bbbb;
+}
+
+.Card:nth-child(n+2) .card-body {
+    background: rgb(21,226,215);
+    background: linear-gradient(0deg, rgba(21,226,215,1) 11%, rgba(14,172,180,1) 96%);
+}
+
+.Card:nth-child(3n+3){
+    border: 2px solid #999922;
+    box-shadow: 0 0 4px 4px #bbbb33;
+}
+
+.Card:nth-child(3n+3) .card-body {
+    background: rgb(210,195,22);
+    background: linear-gradient(0deg, rgba(210,195,22,1) 11%, rgba(180,166,14,1) 96%);
+}
+
+.Card:nth-child(3n+1){
+    border: 2px solid #992299;
+    box-shadow: 0 0 4px 4px #bb33bb;
+}
+
+.Card:nth-child(3n+1) .card-body {
+    background: rgb(187,18,187);
+    background: linear-gradient(0deg, rgba(187,18,187,1) 11%, rgba(135,13,144,1) 96%);
+}
