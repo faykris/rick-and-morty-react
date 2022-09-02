@@ -1,7 +1,7 @@
 {
   "name": "rick-and-morty-react",
   "version": "0.1.0",
-  "homepage": "https://faykris.github.io/rick-and-morty-react/",
+  "homepage": "https://faykris.github.io/rick-and-morty-react",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.6.9",
