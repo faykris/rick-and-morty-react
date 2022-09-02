@@ -81,4 +81,4 @@ If you type incorrect values in the text field, when you click on **Add Nickname
 ![screenshot-6](screenshots/Screenshot_6.png)\
 
 ## Authors
-- Cristian Pinzón: ![LinkedIn](https://www.linkedin.com/in/cristian-pinzon28/)
+- Cristian Pinzón: [LinkedIn](https://www.linkedin.com/in/cristian-pinzon28/)
